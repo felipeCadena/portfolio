@@ -3,5 +3,5 @@ type TypeLogos = {
 }
 
 export default function Logos({image}: TypeLogos) {
-  return (<img src={image} alt={`Logo da linguagem: ${image}`} width={20}/>)
+  return (<img src={image} alt={`Logo da linguagem: ${image}`} width={40}/>)
 }
