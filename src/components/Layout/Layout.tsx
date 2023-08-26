@@ -1,11 +1,20 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
 
-export default function Layout() {
+type PropsHeader = {
+  toggleTheme: () => void,
+  isDarkTheme: boolean,
+};
+
+export default function Layout({isDarkTheme, toggleTheme}: PropsHeader) {
   return (
     <>
-      <Header />
+      <Header 
+      toggleTheme={ toggleTheme }
+      isDarkTheme={ isDarkTheme }
+      />
       <Outlet/>
+      <footer style={{textAlign: 'center', margin: '1rem'}}>© 2023 Felipe Cadena</footer>
     </>
   )
 }
