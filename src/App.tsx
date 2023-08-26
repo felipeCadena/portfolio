@@ -8,8 +8,8 @@ import Home from "./pages/Home/Home"
 import GlobalStyles from "./styles/global"
 import { ThemeProvider } from "styled-components"
 import { useState } from "react"
-import dark from './styles/themes/light';
-import ligth from './styles/themes/dark';
+import dark from './styles/themes/dark';
+import light from './styles/themes/light';
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-    <ThemeProvider theme={ !isDarkTheme ?  dark : ligth }>
+    <ThemeProvider theme={ !isDarkTheme ?  dark : light }>
     <GlobalStyles />
     <Routes>
       <Route path="/" element={<Layout 

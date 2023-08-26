@@ -1,10 +1,11 @@
 export default {
   colors: {
-    primaryText: '#393939',
-    secondaryText: '#9394A5',
-    primary: '#FFFFFF',
+    primaryText: '#CACDE8',
+    secondaryText: '#777A92',
+    primary: '#25273C',
     secondary: '#4D5066',
-    background: '#D2D3DB',
-    borderColor: '#e6e5e9',
+    background: '#121212',
+    backgroundHeader: '#101010',
+    borderColor: '#383a4f',
   },
 };
