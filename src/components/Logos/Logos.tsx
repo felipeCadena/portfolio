@@ -1,7 +1,11 @@
-type TypeLogos = {
-  image: string;
-}
+import { StacksImage } from "./Logo.styled"
 
-export default function Logos({image}: TypeLogos) {
-  return (<img src={image} alt={`Logo da linguagem: ${image}`} width={40}/>)
+const stacks = ['/js.svg', '/react.svg', 'redux.svg', '/html.svg', '/css.svg', '/git.svg', '/jest.svg', '/material-ui.svg', '/bootstrap.svg']
+
+export default function Logos() {
+  return (
+    stacks.map((stack) => (
+      <StacksImage key={stack} src={stack} alt={`Logo da linguagem: ${stack}`} />
+    ))
+  )
 }

@@ -5,11 +5,28 @@ import Sobre from "./components/Sobre/Sobre"
 import Layout from "./components/Layout/Layout"
 import NotFound from "./components/NotFound/NotFound"
 import Home from "./components/Home/Home"
+import GlobalStyles from "./styles/global"
+import { ThemeProvider } from "styled-components"
+import { useState } from "react"
+import dark from './styles/themes/light';
+import ligth from './styles/themes/dark';
 
 function App() {
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDarkTheme((prev) => !prev);
+  };
+
   return (
+    <>
+    <ThemeProvider theme={ isDarkTheme ?  dark : ligth }>
+    <GlobalStyles />
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={<Layout 
+      toggleTheme={ toggleTheme }
+      isDarkTheme={ isDarkTheme }
+      />}>
         <Route index element={<Home />} />
         <Route path="sobre" element={<Sobre />}/>
         <Route path="portfolio" element={<Portfolio />}/>
@@ -17,6 +34,8 @@ function App() {
       </Route>
       <Route path='/*' element={<NotFound />}/>
     </Routes>
+    </ThemeProvider>
+    </>
   )
 }
 

@@ -5,7 +5,12 @@ export const ContainerHeader = styled.header`
  justify-content: space-evenly;
  align-items: center;
  height: 10vh;
- background-color: aliceblue;
+ /* background-color:; */
+
+ & img {
+  height: 2rem;
+  width: 2rem;
+ }
 
  & a:hover {
    color: red;
