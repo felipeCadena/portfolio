@@ -1,5 +1,26 @@
 import styled from 'styled-components';
 
+export const ContainerHome = styled.main`
+  text-transform: uppercase;
+
+  & h2 {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+
+    & h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 3rem;
+    }
+  }
+`;
+
 export const ContainerSection = styled.section`
   display: flex;
   align-items: center;
@@ -71,37 +92,27 @@ export const ContainerSection = styled.section`
 
   & h1 {
     font-size: 1.5rem;
+    font-weight: 700;
     line-height: 2rem;
   }
 
   & p {
     font-size: 1rem;
+    font-weight: 700;
     line-height: 2rem;
   }
-  }
+}
 `;
 
 export const ContainerStacks = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  height: 30vh;
+  gap: 2rem;
+  margin: 1rem;
 
   @media (max-width: 700px) {
     display: flex;
     flex-wrap: wrap; 
-  }
-`;
-
-export const ContainerHome = styled.main`
-  height: 100vh;
-  text-transform: uppercase;
-
-
-  @media (max-width: 700px) {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
   }
 `;

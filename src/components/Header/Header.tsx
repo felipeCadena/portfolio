@@ -1,12 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
 import { ContainerHeader, ContainerLinks } from "./Header.styled";
 
-type PropsHeader = {
-  toggleTheme: () => void,
-  isDarkTheme: boolean,
-};
+import ThemeContext from "../../contexts/theme";
+import { useContext } from "react";
 
-export default function Header({isDarkTheme, toggleTheme}: PropsHeader) {
+export default function Header() {
+  const { isDarkTheme, setIsDarkTheme  } = useContext(ThemeContext);
+
+  const toggleTheme = () => {
+      setIsDarkTheme(!isDarkTheme);
+  };
 
   return (
     <ContainerHeader>
