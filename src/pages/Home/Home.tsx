@@ -1,4 +1,4 @@
-import Logos from "../Logos/Logos";
+import Logos from "../../components/Logos/Logos";
 import { ContainerMain, ContainerStacks } from "./Home.styled";
 
 export default function Home() {

@@ -3,7 +3,6 @@ import { ContainerRedes } from "./Contato.styled";
 
 export default function Contato() {
   return (
-    <>
       <ContainerRedes>
         <h1>Contato</h1>
         <p>Github</p>
@@ -17,6 +16,5 @@ export default function Contato() {
         <img src="/mail.svg" alt="Logo E-mail" width={30}/>
         <p>felipecaden@gmail.com</p>
       </ContainerRedes>
-    </>
   )
 }
