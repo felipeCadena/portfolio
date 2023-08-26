@@ -5,7 +5,7 @@ const stacks = ['/js.svg', '/react.svg', 'redux.svg', '/html.svg', '/css.svg', '
 export default function Logos() {
   return (
     stacks.map((stack) => (
-      <StacksImage key={stack} src={stack} alt={`Logo da linguagem: ${stack}`} />
+      <StacksImage key={stack} src={stack} alt={`Logo da linguagem: ${stack}`} title={stack}/>
     ))
   )
 }

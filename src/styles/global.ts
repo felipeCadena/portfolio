@@ -1,14 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-  /* @font-face {
-    font-family: "Josefin Sans";
-    src: url("/fonts/JosefinSans-VariableFont_wght.ttf");
+  @font-face {
+    font-family: 'Saira';
+    src: url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,400;0,700;1,400&display=swap");
   }
 
   :root {
-    font-family: "Josefin Sans", sans-serif;
-  } */
+    font-family: 'Saira', sans-serif;
+
+  }
 
 * {
     margin: 0;
