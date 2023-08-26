@@ -1,20 +1,21 @@
 import Logos from "../../components/Logos/Logos";
-import { ContainerMain, ContainerStacks } from "./Home.styled";
+import { ContainerSection, ContainerStacks, ContainerHome } from "./Home.styled";
 
 export default function Home() {
   return (
-    <>
-    <ContainerMain>
+    <ContainerHome>
+    <ContainerSection>
       <div>
-        <h1>Olá, sou <strong>Felipe Cadena</strong></h1>
-        <p>Desenvolvedor Front-end</p>
+        <p>Olá, sou</p>
+        <h1>Felipe Cadena</h1>
+        <p className="blink animationBlink">Desenvolvedor Front-end!</p>
       </div>
-      <img src='/developer.svg' alt="Pessoa codando" width={500}/>
-    </ContainerMain>
-      <h2 style={{textAlign: 'center'}}>Stacks:</h2>
+      <img src='/developer.svg' alt="Pessoa codando"/>
+    </ContainerSection>
+          <h2 style={{textAlign: 'center'}}>Stacks:</h2>
       <ContainerStacks>
         <Logos /> 
       </ContainerStacks>
-    </>
+    </ContainerHome>
   )
 }

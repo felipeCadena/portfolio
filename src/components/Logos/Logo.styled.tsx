@@ -7,4 +7,9 @@ export const StacksImage = styled.img`
   & :hover {
     scale: 2;
   }
+
+  @media (max-width: 700px) { 
+    width: 2rem;
+    margin: 1rem;
+  }
 `;
