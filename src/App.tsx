@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-    <ThemeProvider theme={ isDarkTheme ?  dark : ligth }>
+    <ThemeProvider theme={ !isDarkTheme ?  dark : ligth }>
     <GlobalStyles />
     <Routes>
       <Route path="/" element={<Layout 
