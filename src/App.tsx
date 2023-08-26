@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom"
-import Portfolio from "./components/Portfolio/Portfolio"
-import Contato from "./components/Contato/Contato"
-import Sobre from "./components/Sobre/Sobre"
-import Layout from "./components/Layout/Layout"
-import NotFound from "./components/NotFound/NotFound"
-import Home from "./components/Home/Home"
+import Portfolio from "./pages/Portfolio/Portfolio"
+import Contato from "./pages/Contato/Contato"
+import Sobre from "./pages/Sobre/Sobre"
+import Layout from "./pages/Layout/Layout"
+import NotFound from "./pages/NotFound/NotFound"
+import Home from "./pages/Home/Home"
 import GlobalStyles from "./styles/global"
 import { ThemeProvider } from "styled-components"
 import { useState } from "react"
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-    <ThemeProvider theme={ isDarkTheme ?  dark : ligth }>
+    <ThemeProvider theme={ !isDarkTheme ?  dark : ligth }>
     <GlobalStyles />
     <Routes>
       <Route path="/" element={<Layout 

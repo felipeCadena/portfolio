@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Header from "../Header/Header";
+import Header from '../../components/Header/Header';
 
 type PropsHeader = {
   toggleTheme: () => void,
@@ -14,7 +14,7 @@ export default function Layout({isDarkTheme, toggleTheme}: PropsHeader) {
       isDarkTheme={ isDarkTheme }
       />
       <Outlet/>
-      <footer style={{textAlign: 'center', margin: '1rem'}}>© 2023 Felipe Cadena</footer>
+      <footer style={{textAlign: 'center', margin: '4rem'}}>© 2023 Felipe Cadena</footer>
     </>
   )
 }

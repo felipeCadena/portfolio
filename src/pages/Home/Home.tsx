@@ -1,4 +1,4 @@
-import Logos from "../Logos/Logos";
+import Logos from "../../components/Logos/Logos";
 import { ContainerMain, ContainerStacks } from "./Home.styled";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       </div>
       <img src='/developer.svg' alt="Pessoa codando" width={500}/>
     </ContainerMain>
-      <h2>Stacks:</h2>
+      <h2 style={{textAlign: 'center'}}>Stacks:</h2>
       <ContainerStacks>
         <Logos /> 
       </ContainerStacks>
