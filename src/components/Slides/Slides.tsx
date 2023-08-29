@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { useContext } from 'react';
 import ThemeContext from "../../contexts/theme";
-import { ProjectImage, Container } from "./Slides.styled";
-
-
+import { ProjectImage, Container, ContainerMain } from "./Slides.styled";
 
 type PropsSlides = {
   title: string;
@@ -15,7 +13,7 @@ type PropsSlides = {
 function Slides({title, content, img, github}: PropsSlides) {
   const { isDarkTheme  } = useContext(ThemeContext);
   return (
-    <div>
+    <ContainerMain>
       <ProjectImage>
         {img && <img src={img} alt={title}/>}
       </ProjectImage>
@@ -26,7 +24,7 @@ function Slides({title, content, img, github}: PropsSlides) {
       </Link>
       </Container>
       <p>{content}</p>
-    </div>
+    </ContainerMain>
   )
 }
 
