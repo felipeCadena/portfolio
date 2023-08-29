@@ -16,7 +16,6 @@ export const ContainerHome = styled.main`
       font-size: 1.5rem;
       font-weight: 700;
       text-align: center;
-      margin-top: 3rem;
     }
   }
 `;
@@ -27,8 +26,8 @@ export const ContainerSection = styled.section`
   justify-content: space-around;
 
   & img {
-    width: 30rem;
-    margin-top: 1rem;
+    width: 25rem;
+    margin: 2rem;
     animation: 1.5s linear 0s infinite alternate none running imageDev;
   }
 
@@ -86,8 +85,8 @@ export const ContainerSection = styled.section`
     margin-top: 1rem;
 
     & img {
-    margin-top: 2rem;
-    width: 20rem;
+    margin: 2rem;
+    width: 18rem;
   }
 
   & h1 {

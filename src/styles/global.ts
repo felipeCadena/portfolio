@@ -21,6 +21,12 @@ const GlobalStyles = createGlobalStyle`
     color: ${(props) => props.theme.colors.primaryText};
     background-color: ${(props) => props.theme.colors.background};
   }
+
+  @media (max-width: 700px) {
+    html, body {
+      position: relative;
+    }
+  }
 `;
 
 export default GlobalStyles;
