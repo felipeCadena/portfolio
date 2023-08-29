@@ -20,6 +20,10 @@ export default function Portfolio() {
   return (
     <ContainerMain>
     <h1>Portfolio</h1>
+      <div>
+        <button onClick={handlePrev}>Anterior</button>
+        <button onClick={handleNext}>Próximo</button>
+      </div>
     <ContainerOne>
           <Slides 
           title={currentProject.title}
@@ -27,10 +31,6 @@ export default function Portfolio() {
           img={currentProject.img}
           github={currentProject.github}
           />
-      <div>
-        <button onClick={handlePrev}>Anterior</button>
-        <button onClick={handleNext}>Próximo</button>
-      </div>
       </ContainerOne>
     </ContainerMain>
   )

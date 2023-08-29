@@ -11,6 +11,13 @@ export const ContainerMain = styled.main`
     margin-top: 1rem;
     font-size: 2rem;
   }
+
+  & button {
+    margin: 0 1rem;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    border: none;
+  }
 `;
 
 export const ContainerOne = styled.div`
@@ -24,14 +31,9 @@ export const ContainerOne = styled.div`
   }
 
   & p {
-    margin-bottom: 1rem;
-  }
+    margin: 0 auto;
+    width: 50%;
 
-  & button {
-    margin: 1rem;
-    padding: 0.6rem;
-    border-radius: 1rem;
-    border: none;
   }
 
   & .icon {

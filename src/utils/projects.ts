@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: 'TrybeWallet | Stack: React + Redux',
-    content: 'desenvolvimento',
+    content: 'Em desenvolvimento',
     img: "",
     github: 't',
   }
