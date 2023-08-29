@@ -14,7 +14,7 @@ export default function Sobre() {
 
       <p>Estou empenhado em aplicar esse conjunto diversificado de habilidades para criar soluções digitais impactantes.</p> 
       
-      <p>Fique à vontade para explorar meu perfil no GitHub: <Link to='https://github.com/felipeCadena' target="_blank">felipeCadena</Link></p>
+      <p>Fique à vontade para explorar meu perfil no GitHub: <Link to='https://github.com/felipeCadena' target="_blank" className="link">felipeCadena</Link></p>
     </ContainerText>
     </ContainerAbout>
     </>

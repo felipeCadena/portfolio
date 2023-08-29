@@ -89,7 +89,7 @@ export const ContainerLinks = styled.div`
   align-content: center;
 
   & span {
-    vertical-align: middle;
+    vertical-align: super;
   }
 
   @media (max-width: 700px) {

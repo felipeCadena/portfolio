@@ -8,6 +8,14 @@ export const ContainerRedes = styled.section`
   gap: 2rem;
   height: 50vh;
 
+  & h1 {
+    font-size: 2rem;
+  }
+
+  & p {
+    font-weight: 700;
+  }
+
   & .contact {
     display: flex;
     flex-direction: column;
