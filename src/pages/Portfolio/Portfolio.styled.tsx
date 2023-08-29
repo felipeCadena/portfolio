@@ -37,4 +37,16 @@ export const ContainerOne = styled.div`
   & .icon {
     width: 2rem;
   }
+
+  @media (max-width: 700px) { 
+  
+    & img {
+    width: 20rem;
+    border-radius: 2rem;
+  }
+
+  & p {
+    margin: 0 1rem;
+  }
+  }
 `;

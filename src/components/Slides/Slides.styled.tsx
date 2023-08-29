@@ -1,9 +1,17 @@
 import styled from 'styled-components';
 
+export const ContainerMain = styled.div`
+
+  @media (max-width: 700px) { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+`
+
 export const ProjectImage = styled.div`
   margin: 0 auto;
-  background-image: url();
-  background-size: cover; 
 `;
 
 export const Container = styled.div`
