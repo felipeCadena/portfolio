@@ -14,13 +14,13 @@ export default function Contato() {
         <div className="contact">
          <p>Github</p>
           <Link to='https://github.com/felipeCadena' target="_blank">
-          <img src={!isDarkTheme ? './github-light.svg' : "/github.svg"} alt="Logo Github" width={30} title="Github"/>
+          <img src={!isDarkTheme ? './github-light.svg' : "/github.svg"} alt="Logo Github" width={50} title="Github"/>
           </Link>
         </div>
         <div className="contact">
           <p>Linkedin</p>
           <Link to='https://www.linkedin.com/in/felipe-caden/' target="_blank">
-          <img src="/linkedin.svg" alt="Logo Linkedin" width={30} title="Linkedin"/>
+          <img src="/linkedin.svg" alt="Logo Linkedin" width={50} title="Linkedin"/>
           </Link>
         </div>
         <div className="email">

@@ -18,6 +18,16 @@ export const ContainerAbout = styled.section`
     border: 1px solid #808080;
   }
 
+  & .link {
+    text-decoration: none;
+    color: ${props => props.theme.colors.secondaryText};
+  }
+
+  & .link:hover {
+    text-decoration: none;
+    color: ${props => props.theme.colors.primaryText};
+  }
+
   @media (max-width: 700px) {
     display: flex;
     flex-direction: column;
