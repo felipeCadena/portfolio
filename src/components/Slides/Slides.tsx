@@ -1,30 +1,37 @@
 import { Link } from "react-router-dom";
-import { useContext } from 'react';
-import ThemeContext from "../../contexts/theme";
-import { ProjectImage, Container, ContainerMain } from "./Slides.styled";
+// import { useContext } from 'react';
+// import ThemeContext from "../../contexts/theme";
+import { Container, ContainerLinks, ContainerTitle } from "./Slides.styled";
 
 type PropsSlides = {
   title: string;
   content: string;
   img: string;
   github: string;
+  stack: string;
+  project: string;
 }
 
-function Slides({title, content, img, github}: PropsSlides) {
-  const { isDarkTheme  } = useContext(ThemeContext);
+function Slides({title, content, img, github, stack, project}: PropsSlides) {
   return (
-    <ContainerMain>
-      <ProjectImage>
-        {img && <img src={img} alt={title}/>}
-      </ProjectImage>
       <Container>
-      <h2>{title}</h2>
-      <Link to={github} target="_blank">
-        <img src={!isDarkTheme ? './github-light.svg' : "/github.svg"} alt="Logo Github" className='icon'/>
-      </Link>
+        {img && <img src={img} alt={title}/>}
+        <div>
+          <h2>{title}</h2>
+          <ContainerTitle>
+          <p>Stack: {stack}</p>
+          </ContainerTitle>
+        <p>{content}</p>
+        <ContainerLinks>
+          <Link to={github} target="_blank">
+            Acessar repositório
+          </Link>
+          <Link to={project} target="_blank">
+            Acessar projeto
+          </Link>
+        </ContainerLinks>
+      </div>
       </Container>
-      <p>{content}</p>
-    </ContainerMain>
   )
 }
 

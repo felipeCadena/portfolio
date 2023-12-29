@@ -1,12 +1,23 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 40vh;
+
+  & h1 {
+    font-size: 2rem;
+  }
+`
+
 export const ContainerRedes = styled.section`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  height: 50vh;
 
   & h1 {
     font-size: 2rem;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContainerMain = styled.main`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   text-align: center;
   min-height: 30vh;
 
@@ -17,6 +17,11 @@ export const ContainerMain = styled.main`
     padding: 0.6rem;
     border-radius: 1rem;
     border: none;
+  }
+
+  & button:hover {
+    background-color: #d4ebff;
+    cursor: pointer;
   }
 `;
 

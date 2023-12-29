@@ -1,51 +1,51 @@
 import styled from 'styled-components';
 
-export const MenuHamburguer = styled.div`
-  @media (max-width: 700px) {
+// export const MenuHamburguer = styled.div`
+//   @media (max-width: 700px) {
 
-  & .icon {
-    position: absolute;
-    z-index: 4;
-    left: 1%;
-    width: fit-content;
-    height: 3rem;
-    cursor: pointer;
-  }
+//   & .icon {
+//     position: absolute;
+//     z-index: 4;
+//     left: 1%;
+//     width: fit-content;
+//     height: 3rem;
+//     cursor: pointer;
+//   }
 
-  & .hamburguer {
-    top: 5%;
-    left: 85%;
-    width: 2rem;
-    height: 0.3rem;
-    background-color: #007ACC;
-    position: absolute;
-    box-shadow: 0 2px 5px rgba(0 0 0 0.2);
-    transition: 0.5s;
-  }
+//   & .hamburguer {
+//     top: 5%;
+//     left: 85%;
+//     width: 2rem;
+//     height: 0.3rem;
+//     background-color: #007ACC;
+//     position: absolute;
+//     box-shadow: 0 2px 5px rgba(0 0 0 0.2);
+//     transition: 0.5s;
+//   }
 
-  & .hamburguer::before {
-    top: -1rem;
-    content: '';
-    position: absolute;
-    width: 2rem;
-    height: 0.3rem;
-    background-color: #007ACC;
-    box-shadow: 0 2px 5px rgba(0 0 0 0.2);
-    transition: 0.5s;
-  }
+//   & .hamburguer::before {
+//     top: -1rem;
+//     content: '';
+//     position: absolute;
+//     width: 2rem;
+//     height: 0.3rem;
+//     background-color: #007ACC;
+//     box-shadow: 0 2px 5px rgba(0 0 0 0.2);
+//     transition: 0.5s;
+//   }
 
-  & .hamburguer::after {
-    top: 1rem;
-    content: '';
-    position: absolute;
-    width: 2rem;
-    height: 0.3rem;
-    background-color: #007ACC;
-    box-shadow: 0 2px 5px rgba(0 0 0 0.2);
-    transition: 0.5s;
-  }
-}
-`;
+//   & .hamburguer::after {
+//     top: 1rem;
+//     content: '';
+//     position: absolute;
+//     width: 2rem;
+//     height: 0.3rem;
+//     background-color: #007ACC;
+//     box-shadow: 0 2px 5px rgba(0 0 0 0.2);
+//     transition: 0.5s;
+//   }
+// }
+// `;
 
 export const ContainerHeader = styled.header`
  display: flex;

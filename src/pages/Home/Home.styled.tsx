@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 export const ContainerHome = styled.main`
-  text-transform: uppercase;
+    width: 100vw;
+    margin: 2rem;
 
   & h2 {
     text-align: center;
     margin: 1rem;
+    font-size: 2rem;
   }
 
   @media (max-width: 700px) {
@@ -24,11 +26,13 @@ export const ContainerSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 80vh;
 
   & img {
-    width: 25rem;
     margin: 2rem;
-    animation: 1.5s linear 0s infinite alternate none running imageDev;
+    width: 25rem;
+    border-radius: 50rem;
+    border: 1px solid #808080;
   }
 
   & h1 {
@@ -37,6 +41,12 @@ export const ContainerSection = styled.section`
 
   & p {
     font-size: 2rem;
+  }
+
+  & .about {
+    margin-top: 2rem;
+    font-size: 1rem;
+    max-width: 30rem;
   }
 
   & .blink {
@@ -67,15 +77,6 @@ export const ContainerSection = styled.section`
       to{
         border-right-color: transparent;
       }
-  }
-
-  @keyframes imageDev {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.1);
-    }
   }
 
   @media (max-width: 700px) {

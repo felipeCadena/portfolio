@@ -1,5 +1,5 @@
 import { ContainerOne, ContainerMain } from './Portfolio.styled';
-import Slides from '../../components/Slides/Slides';
+import Slides from '../Slides/Slides';
 import projects from '../../utils/projects';
 import { useState } from 'react';
 
@@ -19,7 +19,7 @@ export default function Portfolio() {
 
   return (
     <ContainerMain>
-    <h1>Portfolio</h1>
+    <h1>Projetos</h1>
       <div>
         <button onClick={handlePrev}>Anterior</button>
         <button onClick={handleNext}>Próximo</button>
@@ -30,6 +30,8 @@ export default function Portfolio() {
           content={currentProject.content}
           img={currentProject.img}
           github={currentProject.github}
+          stack={currentProject.stack}
+          project={currentProject.project}
           />
       </ContainerOne>
     </ContainerMain>
