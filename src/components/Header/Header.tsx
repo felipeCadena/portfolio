@@ -26,15 +26,11 @@ export default function Header() {
         <a href='#contato'>Contato</a>
       <ContainerLinks>
         <Link to='https://github.com/felipeCadena' target="_blank">
-          <img src={!isDarkTheme ? './github-light.svg' : "/github.svg"} alt="Logo Github" width={20}/>
+          <img src="/github.svg" alt="Logo Github" width={20}/>
         </Link>
         <Link to='https://www.linkedin.com/in/felipe-caden/' target="_blank">
-          <img src="/linkedin.svg" alt="Logo Linkedin" width={20}/>
+          <img src="/lk.svg" alt="Logo Linkedin" width={20}/>
         </Link>
-          <Link to='/resume.pdf' target="_blank" download>
-            <img src="/download.svg" alt="Icone para download"/>
-            <span>Currículo</span>
-          </Link>
       </ContainerLinks>
         <img 
           className="theme"

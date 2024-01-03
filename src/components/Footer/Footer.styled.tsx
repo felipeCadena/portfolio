@@ -5,6 +5,7 @@ export const FooterHome = styled.footer`
   justify-content: center;
   align-items: end;
   height: 4rem;
+  margin: 1rem auto;
 
 @media (max-width: 700px) {
   display: flex;

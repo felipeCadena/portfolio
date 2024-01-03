@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ContainerHome = styled.main`
@@ -22,6 +23,19 @@ export const ContainerHome = styled.main`
   }
 `;
 
+export const ResumeLink = styled(Link)`
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: ${props => props.theme.colors.secondaryText};
+
+  &:hover {
+    background-color: ${props => props.theme.colors.hover};
+  }
+`
+
 export const ContainerSection = styled.section`
   display: flex;
   align-items: center;
@@ -31,12 +45,13 @@ export const ContainerSection = styled.section`
   & img {
     margin: 2rem;
     width: 25rem;
-    border-radius: 50rem;
-    border: 1px solid #808080;
+    background-image: linear-gradient(to bottom, ${props => props.theme.colors.secondaryText} 0%, #000 100%);
+    border-radius: 50rem / 35rem;
   }
 
   & h1 {
     font-size: 3rem;
+    color: ${props => props.theme.colors.secondaryText}
   }
 
   & p {
@@ -45,6 +60,7 @@ export const ContainerSection = styled.section`
 
   & .about {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 1rem;
     max-width: 30rem;
   }

@@ -34,9 +34,29 @@ export const ContainerRedes = styled.section`
     gap: 1rem;
   }
 
+  & .contact:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease-in-out;
+  }
+
   & .email {
     display: flex;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
+  }
+
+  & .email:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  & img {
+    width: 2rem;
+    background-color: ${props => props.theme.colors.secondary};
+    border-radius: 4rem;
+    display: block; 
+    width: 100%;
+    padding: 1rem;
   }
 `;

@@ -19,7 +19,7 @@ export default function Portfolio() {
 
   return (
     <ContainerMain>
-    <h1>Projetos</h1>
+    <h1 id='projetos'>Projetos</h1>
       <div>
         <button onClick={handlePrev}>Anterior</button>
         <button onClick={handleNext}>Próximo</button>

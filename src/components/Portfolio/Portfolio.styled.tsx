@@ -13,14 +13,16 @@ export const ContainerMain = styled.main`
   }
 
   & button {
-    margin: 0 1rem;
-    padding: 0.6rem;
-    border-radius: 1rem;
+    padding: 0.6rem 2rem;
+    margin: 1rem;
+    border-radius: 2rem;
     border: none;
+    color: white;
+    background-color: ${props => props.theme.colors.secondaryText};
   }
 
   & button:hover {
-    background-color: #d4ebff;
+    background-color: ${props => props.theme.colors.hover};
     cursor: pointer;
   }
 `;
