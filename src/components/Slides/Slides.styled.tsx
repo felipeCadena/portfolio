@@ -30,15 +30,14 @@ export const ContainerLinks = styled.div`
 
   & a {
     text-decoration: none;
-    color: black;
-    background-color: white;
-    margin: 0 1rem;
-    padding: 0.6rem;
-    border-radius: 1rem;
-    border: none;
+    padding: 0.6rem 2rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: ${props => props.theme.colors.secondaryText}
   }
 
   & a:hover {
-    background-color: #d4ebff;
+    background-color: ${props => props.theme.colors.hover};
   }
 `

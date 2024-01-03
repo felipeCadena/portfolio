@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="800px" height="800px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>mail</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="email" fill="#000000" transform="translate(42.666667, 85.333333)">
-            <path d="M3.55271368e-14,1.42108547e-14 L3.55271368e-14,341.333333 L426.666667,341.333333 L426.666667,1.42108547e-14 L3.55271368e-14,1.42108547e-14 Z M349.226667,42.6666667 L213.333333,163.413333 L77.44,42.6666667 L349.226667,42.6666667 Z M42.6666667,298.666667 L42.6666667,68.9066667 L213.333333,220.586667 L384,68.9066667 L384,298.666667 L42.6666667,298.666667 Z">
-
-</path>
-        </g>
-    </g>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.33333 5.33337H26.6667C28.1333 5.33337 29.3333 6.53337 29.3333 8.00004V24C29.3333 25.4667 28.1333 26.6667 26.6667 26.6667H5.33333C3.86667 26.6667 2.66667 25.4667 2.66667 24V8.00004C2.66667 6.53337 3.86667 5.33337 5.33333 5.33337Z" stroke="#8257E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29.3333 8L16 17.3333L2.66667 8" stroke="#8257E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
