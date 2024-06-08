@@ -1,3 +1,3 @@
-My personal portfolio website built using React (developing...):
+Portfólio com apresentação dos projetos e minhas competências
 
-=> https://felipe-cadena.vercel.app/
+Linkedin: https://www.linkedin.com/in/felipe-caden/
