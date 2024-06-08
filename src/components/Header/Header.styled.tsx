@@ -1,56 +1,14 @@
 import styled from 'styled-components';
 
-// export const MenuHamburguer = styled.div`
-//   @media (max-width: 700px) {
-
-//   & .icon {
-//     position: absolute;
-//     z-index: 4;
-//     left: 1%;
-//     width: fit-content;
-//     height: 3rem;
-//     cursor: pointer;
-//   }
-
-//   & .hamburguer {
-//     top: 5%;
-//     left: 85%;
-//     width: 2rem;
-//     height: 0.3rem;
-//     background-color: #007ACC;
-//     position: absolute;
-//     box-shadow: 0 2px 5px rgba(0 0 0 0.2);
-//     transition: 0.5s;
-//   }
-
-//   & .hamburguer::before {
-//     top: -1rem;
-//     content: '';
-//     position: absolute;
-//     width: 2rem;
-//     height: 0.3rem;
-//     background-color: #007ACC;
-//     box-shadow: 0 2px 5px rgba(0 0 0 0.2);
-//     transition: 0.5s;
-//   }
-
-//   & .hamburguer::after {
-//     top: 1rem;
-//     content: '';
-//     position: absolute;
-//     width: 2rem;
-//     height: 0.3rem;
-//     background-color: #007ACC;
-//     box-shadow: 0 2px 5px rgba(0 0 0 0.2);
-//     transition: 0.5s;
-//   }
-// }
-// `;
+interface MenuProps {
+  menuOpen: boolean;
+}
 
 export const ContainerHeader = styled.header`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
   height: 10vh;
   width: 100vw;
   background-color: ${props => props.theme.colors.backgroundHeader};
@@ -58,42 +16,93 @@ export const ContainerHeader = styled.header`
   & img {
     width: 2rem;
   }
-  
-  & a:hover {
-    color: ${props => props.theme.colors.secondaryText};
+
+  & .theme {
+    height: 2rem;
+    cursor: pointer;
   }
-  
-  & a {
+
+  @media (max-width: 700px) {
+    padding: 0 1rem;
+  }
+`;
+
+export const NavLinks = styled.nav<MenuProps>`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  a {
     text-decoration: none;
     cursor: pointer;
     color: ${props => props.theme.colors.primaryText};
   }
-  
-  & .theme {
-    height: 2rem;
+
+  a:hover {
+    color: ${props => props.theme.colors.secondaryText};
   }
 
   @media (max-width: 700px) {
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    left: 0;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
-    gap: 1rem;
+    height: 90vh;
+    background-color: ${props => props.theme.colors.backgroundHeader};
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    transform: ${({ menuOpen }) => (menuOpen ? 'translateX(0)' : 'translateX(-100%)')};
+    transition: transform 0.3s ease-in-out;
   }
 `;
 
 export const ContainerLinks = styled.div`
   display: flex;
   gap: 1rem;
-  align-content: center;
+  align-items: center;
 
-  & span {
-    vertical-align: super;
+  @media (max-width: 700px) {
+    justify-content: center;
+    width: 100%;
+  }
+`;
+
+export const MenuHamburguer = styled.div<MenuProps>`
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    background: ${props => props.theme.colors.primaryText};
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+
+  div:nth-child(1) {
+    transform: ${({ menuOpen }) => (menuOpen ? 'rotate(45deg)' : 'rotate(0)')};
+  }
+
+  div:nth-child(2) {
+    opacity: ${({ menuOpen }) => (menuOpen ? '0' : '1')};
+    transform: ${({ menuOpen }) => (menuOpen ? 'translateX(20px)' : 'translateX(0)')};
+  }
+
+  div:nth-child(3) {
+    transform: ${({ menuOpen }) => (menuOpen ? 'rotate(-45deg)' : 'rotate(0)')};
   }
 
   @media (max-width: 700px) {
     display: flex;
-    gap: 3rem;
-
   }
 `;

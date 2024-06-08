@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ContainerHome = styled.main`
-    width: 100vw;
-    margin: 2rem;
+  width: 100vw;
+  /* margin: 2rem; */
 
   & h2 {
     text-align: center;
@@ -14,6 +14,7 @@ export const ContainerHome = styled.main`
   @media (max-width: 700px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     & h2 {
       font-size: 1.5rem;
@@ -34,6 +35,20 @@ export const ResumeLink = styled(Link)`
   &:hover {
     background-color: ${props => props.theme.colors.hover};
   }
+
+  @media (max-width: 700px) {
+    padding: 0.6rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+  }
+`;
+
+export const ContainerContato = styled.div`
+
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 export const ContainerSection = styled.section`
@@ -51,7 +66,7 @@ export const ContainerSection = styled.section`
 
   & h1 {
     font-size: 3rem;
-    color: ${props => props.theme.colors.secondaryText}
+    color: ${props => props.theme.colors.secondaryText};
   }
 
   & p {
@@ -73,51 +88,57 @@ export const ContainerSection = styled.section`
 
   & .animationBlink {
     animation: 
-    animationBlink 500ms 4s steps(40) infinite normal, 
-    typing 5s steps(40) 1s infinite normal both;
+      animationBlink 500ms 4s steps(40) infinite normal, 
+      typing 5s steps(40) 1s infinite normal both;
   }
 
   @keyframes typing {
-      from{
-        width: 0;
-      }
-      to{
-        width: 105%;
-      }
+    from {
+      width: 0;
+    }
+    to {
+      width: 105%;
+    }
   }
 
   @keyframes animationBlink {
-      from {
-        border-right-color: ${props => props.theme.colors.primaryText};
-      }
-      to{
-        border-right-color: transparent;
-      }
+    from {
+      border-right-color: ${props => props.theme.colors.primaryText};
+    }
+    to {
+      border-right-color: transparent;
+    }
   }
 
   @media (max-width: 700px) {
-    display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 1rem;
+    height: auto;
 
     & img {
-    margin: 2rem;
-    width: 18rem;
-  }
+      margin: 1rem;
+      width: 18rem;
+    }
 
-  & h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 2rem;
-  }
+    & h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 2rem;
+    }
 
-  & p {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 2rem;
+    & p {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.5rem;
+    }
+
+    & .about {
+      margin: 1rem;
+      font-size: 0.9rem;
+      max-width: 100%;
+    }
   }
-}
 `;
 
 export const ContainerStacks = styled.section`
@@ -128,7 +149,7 @@ export const ContainerStacks = styled.section`
   margin: 1rem;
 
   @media (max-width: 700px) {
-    display: flex;
     flex-wrap: wrap; 
+    gap: 1rem;
   }
 `;

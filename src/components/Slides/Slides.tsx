@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 // import { useContext } from 'react';
 // import ThemeContext from "../../contexts/theme";
-import { Container, ContainerLinks, ContainerTitle } from "./Slides.styled";
+import { Container, ContainerDetails, ContainerLinks, ContainerTitle, Img } from "./Slides.styled";
 
 type PropsSlides = {
   title: string;
@@ -15,19 +15,19 @@ type PropsSlides = {
 function Slides({title, content, img, github, stack, project}: PropsSlides) {
   return (
       <Container>
-        {img && <img src={img} alt={title}/>}
+        {img && <Img src={img} alt={title}/>}
         <div>
           <h2>{title}</h2>
           <ContainerTitle>
-          <p>Stack: {stack}</p>
+          <p>Linguagem: {stack}</p>
           </ContainerTitle>
-        <p>{content}</p>
+        <ContainerDetails>{content}</ContainerDetails>
         <ContainerLinks>
           <Link to={github} target="_blank">
             Acessar repositório
           </Link>
           <Link to={project} target="_blank">
-            Acessar projeto
+            {project.length === 0 ? "Deploy em andamento!" : "Acessar projeto"}
           </Link>
         </ContainerLinks>
       </div>
