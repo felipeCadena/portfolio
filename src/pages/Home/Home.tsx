@@ -11,7 +11,8 @@ export default function Home() {
         <p>Olá, sou</p>
         <h1>Felipe Cadena</h1>
         <p className="blink animationBlink">Desenvolvedor Fullstack!</p>
-        <p className="about">Apaixonado por tecnologia! Com experiência em React.js, Next.js, Redux, JavaScript, TypeScript, Styled Components e consumo de APIs REST.</p>
+        <p className="about">Apaixonado por tecnologia! Com experiência em React.js, Next.js, TypeScript, React Native, 
+Node e sempre me aprimorando.</p>
           <ContainerContato>
             <ResumeLink to='#contato'>
               <span className="resume">Entrar em contato</span>

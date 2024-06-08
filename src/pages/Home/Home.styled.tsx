@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const ContainerHome = styled.main`
   width: 100vw;
-  /* margin: 2rem; */
+  margin: 2rem;
 
   & h2 {
     text-align: center;
@@ -15,6 +15,8 @@ export const ContainerHome = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+
 
     & h2 {
       font-size: 1.5rem;
@@ -37,8 +39,6 @@ export const ResumeLink = styled(Link)`
   }
 
   @media (max-width: 700px) {
-    padding: 0.6rem 1.5rem;
-    margin: 0.5rem;
     font-size: 0.9rem;
   }
 `;
@@ -84,6 +84,7 @@ export const ContainerSection = styled.section`
     border-right: 2px solid ${props => props.theme.colors.primaryText};
     white-space: nowrap;
     overflow: hidden;
+    margin: 0 0.5rem;
   }
 
   & .animationBlink {

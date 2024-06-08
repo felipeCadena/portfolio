@@ -1,11 +1,11 @@
 export default {
   colors: {
-    primaryText: '#393939',
-    secondaryText: '#9394A5',
-    primary: '#FFFFFF',
+    primaryText: '#9394A5',
+    secondaryText: '#8257E6',
+    primary: '#393939',
     secondary: '#4D5066',
-    background: '#F2F2F2',
-    backgroundHeader: '#d3d5d8',
+    background: '#d3d5d8',
+    backgroundHeader: '#e6e5e9',
     borderColor: '#e6e5e9',
     hover: '#552586',
   },
